@@ -7,11 +7,12 @@
 
         <div class="mb-3">
             <?= $this->Form->control('date', [
-                'type' => 'date',
-                'label' => 'Fecha',
-                'class' => 'form-control',
-                'error' => false
-            ]) ?>
+    'type' => 'date',
+    'label' => 'Fecha',
+    'class' => 'form-control',
+    'min' => date('Y-m-d')   // 🔥 bloquea fechas pasadas
+]) ?>
+
         </div>
 
         <div class="mb-3">
